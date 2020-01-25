@@ -81,7 +81,7 @@
     console.log("transactionlar miners pool içine eklendi");
     var lastBlock = chain.chain.pop();
     console.log("son blok :"+ lastBlock.hash);
-    const concreteBlock = new block("14/09/2018",JSON.stringify(chain.pendingTransaction),1,lastBlock.hash);
+    const concreteBlock = new block("14/09/2018",JSON.stringify(chain.pendingTransaction),0,lastBlock.hash);
     var lastBlock = concreteBlock.createBlock(lastBlock.hash.toString());
     console.log("block zincire eklendi: " + concreteBlock.hash);
     
